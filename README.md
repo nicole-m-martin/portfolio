@@ -11,5 +11,5 @@ Documenting building my developer portfolio using:
 - Complete v1 of portfolio by December 1st. 
 - Work on portfolio at least 4 days a week to meet deadline.
 
-### 10/21/21:
+##### 10/21/21:
 Started with create-react-app. Cleaned up skeleton and added folders/files to start building out each component.
