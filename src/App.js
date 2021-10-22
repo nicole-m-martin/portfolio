@@ -10,8 +10,7 @@ import Header from './Components/UI/Header';
 import Main from './Components/UI/Main'
 import Projects from './Components/Projects/Projects';
 import About from './Components/About/About';
-
-
+import Footer from './Components/UI/Footer'
 
 
 function App() {
@@ -20,9 +19,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/main'> 
-          <Main />
-          </Route>
+          <Route exact path='/'>
+           <Main />
+            </Route>
           <Route exact path='/projects'> 
           <Projects />
           </Route>
@@ -31,7 +30,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      
+      <Footer />
     </div>
   );
 }
