@@ -23,4 +23,5 @@ Documenting building my developer portfolio using:
 - Added Tailwind config and setup files to project.
 - Added React-Router-Dom and set up paths.
 
-
+##### 10/26/21
+- Start basic layout of navbar and footer.

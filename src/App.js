@@ -11,7 +11,7 @@ import Main from './Components/UI/Main'
 import Projects from './Components/Projects/Projects';
 import About from './Components/About/About';
 import Footer from './Components/UI/Footer'
-
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -27,6 +27,9 @@ function App() {
           </Route>
           <Route exact path='/about'> 
           <About />
+          </Route>
+          <Route exact path='/contact'> 
+          <Contact />
           </Route>
         </Switch>
       </Router>
