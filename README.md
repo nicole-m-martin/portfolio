@@ -24,4 +24,6 @@ Documenting building my developer portfolio using:
 - Added React-Router-Dom and set up paths.
 
 ##### 10/26/21
-- Start basic layout of navbar and footer.
+- Started basic layout of navbar and footer.
+- Studied more about Tailwind Css.
+- Added Projects Data and pulled it into the Projects component with props.
