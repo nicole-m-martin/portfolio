@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: './src/assets/beatwavez.png',
+    src: '../../../public/assets/beatwavez.png',
     name: 'Beatwavez',
     stack: 'React, Javascript, Express, Node.js, Socket.io, Heroku, Netlify', 
     description: 'BeatWavez is a Jackbox-style karaoke party app that allows users to create and join party rooms, manage a queue, chat with each other, and (most importantly) sing along to lyrics from videos pulled via the YouTube API. This app was built mobile-first with React and Express, utilizing socket.io and material UI.',
@@ -9,7 +9,7 @@ export const projects = [
     
   },
   {
-    image: './src/assets/pixelpusher.png',
+    src: './src/assets/pixelpusher.png',
     name: 'Pixel Pusher',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest ', 
     description: 'Pixel Pusher is a terminal-based drawing art app that allows users to unleash their creativity in an easy and fun way, using only back-end technologies. This is the canvas side of the app where the user can draw with clicks of their mouse.',
@@ -17,7 +17,7 @@ export const projects = [
     deployed: 'https://www.npmjs.com/package/@st-art-up/pixel-pusher'
   },
   {
-    image: './src/assets/simpsonsquotes.png',
+    src: './src/assets/simpsonsquotes.png',
     name: 'Simpsons Quotes',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest', 
     description: 'A simple app made with React Hooks that fetches a quote from The Simpsons API',
@@ -25,7 +25,7 @@ export const projects = [
     deployed: 'https://simpsons-quote-time.netlify.app/'
   },
   {
-    image: './src/assets/robinfood.png',
+    src: './src/assets/robinfood.png',
     name: 'Robin-Food',
     stack: 'Javascript, HTML5, CSS3', 
     description: 'A web app is designed for busy people who want to eat healthier, made-from-scratch meals without having to follow elaborate recipes every day.',
