@@ -7,7 +7,7 @@ import {
   
 } from "react-router-dom"; 
 import Header from './Components/UI/Header';
-import Main from './Components/UI/Main'
+import Main from './Containers/Main'
 import Projects from './Components/Projects/Projects';
 import About from './Components/About/About';
 import Footer from './Components/UI/Footer'
