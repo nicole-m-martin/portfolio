@@ -19,55 +19,78 @@ function Contact() {
   return (
     <div>
       <h1>Contact Me!</h1>
-      <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        {errors.name && errors.name.type === 'required' && (
-          <span role="alert">Name Required</span>
-        )}
-        <input
-          className="w-30 border-green-600 border-2"
-          type="text"
-          name="name"
-          aria-invalid={errors.name ? 'true' : 'false'}
-          {...register('name', { required: true, maxLength: 40 })}
-          placeholder="Name"
-        />
+      <section className="flex justify-center">
+        <div class="w-full max-w-xs">
+          <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+            {errors.name && errors.name.type === 'required' && (
+              <span role="alert">Name Required</span>
+            )}
+            <label
+              className="block text-grey-darker text-sm font-bold mb-2"
+              htmlFor="name"
+            >
+              Name:
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              name="name"
+              aria-invalid={errors.name ? 'true' : 'false'}
+              {...register('name', { required: true, maxLength: 40 })}
+            />
 
-        {errors.email && errors.email.type === 'required' && (
-          <span role="alert">Email Required</span>
-        )}
-        <input
-          className="w-30 border-red-600 border-2"
-          type="email"
-          name="email"
-          {...register('email', { required: true, maxLength: 40 })}
-          placeholder="Email"
-        />
+            {errors.email && errors.email.type === 'required' && (
+              <span role="alert">Email Required</span>
+            )}
+            <label
+              className="block text-grey-darker text-sm font-bold mb-2"
+              htmlFor="email"
+            >
+              Email:
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+              type="email"
+              name="email"
+              aria-invalid={errors.email ? 'true' : 'false'}
+              {...register('email', { required: true, maxLength: 40 })}
+            />
 
-        {errors.message && errors.message.type === 'required' && (
-          <span role="alert">Message Required</span>
-        )}
-        <textarea
-          className="w-80 h-40 border-blue-600 border-2"
-          {...register('message', { required: true, maxLength: 2500 })}
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-        />
+            {errors.message && errors.message.type === 'required' && (
+              <span role="alert">Message Required</span>
+            )}
+            <label
+              className="block text-grey-darker text-sm font-bold mb-2"
+              htmlFor="message"
+            >
+              Message:
+            </label>
+            <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+              {...register('message', { required: true, maxLength: 2500 })}
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              aria-invalid={errors.message ? 'true' : 'false'}
+            />
 
-        <p className>{messageCharsLeft}</p>
+            {/* Message countdown */}
+            <p className>{messageCharsLeft}</p>
 
-        <input
-          className="w-20 h-30 border-blue-600 border-2"
-          type="submit"
-          value="Send"
-        />
-        <input
-          className="w-20 h-30 border-blue-600 border-2"
-          type="reset"
-          value="Clear"
-        />
-      </form>
+            <input
+              className="h-8 px-4 text-sm text-black-100 transition-colors duration-150 bg-yellow-400 rounded-lg cursor-pointer focus:shadow-outline hover:bg-yellow-800"
+              type="submit"
+              value="Send"
+            />
+            <input
+              className="h-8 px-4 p-5text-sm text-black-100 transition-colors duration-150 bg-yellow-500 rounded-lg cursor-pointer focus:shadow-outline hover:bg-yellow-800"
+              type="reset"
+              value="Clear"
+            />
+          </form>
+        </div>
+      </section>
     </div>
   );
 }

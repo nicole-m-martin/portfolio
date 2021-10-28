@@ -8,7 +8,7 @@ Documenting building my developer portfolio using:
 
   - Tailwind CSS
   - React-Hook-Form
-  -
+  - EmailJS
 
 ## Goals:
 
@@ -41,3 +41,5 @@ Documenting building my developer portfolio using:
 
 - Can not get images to render from data file. Will come back to portfolio page.
 - Working on Contact Form.
+- Contact form rendered with React-Hook-Form and EmailJS
+- Some styling added
