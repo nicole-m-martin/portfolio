@@ -25,6 +25,12 @@ function Header() {
           >
             Contact
           </a>
+          <a
+            href="/resume"
+            className="text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-yellow-500 mt-4 md:mt-0"
+          >
+            Resume
+          </a>
         </nav>
       </div>
     </div>

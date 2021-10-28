@@ -9,6 +9,7 @@ Documenting building my developer portfolio using:
   - Tailwind CSS
   - React-Hook-Form
   - EmailJS
+  - React-Pdf
 
 ## Goals:
 
@@ -43,3 +44,8 @@ Documenting building my developer portfolio using:
 - Working on Contact Form.
 - Contact form rendered with React-Hook-Form and EmailJS
 - Some styling added
+
+##### 10/28/21
+
+- Finished Contact Form functionality, it works!!
+- Working on About Me Component
