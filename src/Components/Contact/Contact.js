@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { init, sendForm } from 'emailjs-com';
+init('user_FkoSWYEQ8F2cqar2OKJ2V');
 
 function Contact() {
   const {
@@ -10,18 +12,45 @@ function Contact() {
     formState: { errors },
   } = useForm();
 
+  // Create a unique 6-digit string of 6 numbers to use as a Contact Number
+  const [contactNumber, setContactNumber] = useState('000000');
+
+  const generateContactNumber = () => {
+    const numString = '000000' + ((Math.random() * 1000000) | 0);
+    setContactNumber(numString.substring(numString.length - 6));
+  };
+
+  const onSubmit = (data) => {
+    // console.log(data);
+    generateContactNumber();
+
+    sendForm(
+      'default_service',
+      'template_28v9nkp',
+      '#contact-form',
+      'user_FkoSWYEQ8F2cqar2OKJ2V'
+    ).then(
+      function (res) {
+        console.log('SUCCESS!', res.status, res.text);
+      },
+      function (error) {
+        console.log('FAILED...', error);
+      }
+    );
+  };
+
   // Message countdown
   const message = watch('message') || '';
   const messageCharsLeft = 2500 - message.length;
-
-  const onSubmit = (data) => console.log(data);
 
   return (
     <div>
       <h1>Contact Me!</h1>
       <section className="flex justify-center">
-        <div class="w-full max-w-xs">
+        <div className="w-full max-w-xs">
           <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+            <input type="hidden" name="contact_number" value={contactNumber} />
+
             {errors.name && errors.name.type === 'required' && (
               <span role="alert">Name Required</span>
             )}
@@ -79,7 +108,7 @@ function Contact() {
             <p className>{messageCharsLeft}</p>
 
             <input
-              className="h-8 px-4 text-sm text-black-100 transition-colors duration-150 bg-yellow-400 rounded-lg cursor-pointer focus:shadow-outline hover:bg-yellow-800"
+              className="h-8 px-4 m-4 text-sm text-black-100 transition-colors duration-150 bg-yellow-400 rounded-lg cursor-pointer focus:shadow-outline hover:bg-yellow-800"
               type="submit"
               value="Send"
             />
