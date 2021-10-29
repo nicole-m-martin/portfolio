@@ -6,9 +6,9 @@ import resume from '../assets/resume.pdf';
 
 export default function Resume() {
   return (
-    <div className="grid place-items-center h-screen">
+    <div className="grid place-items-center h-screen ">
       <Document
-        className="ring ring-yellow-300 border-4 border-blue-500"
+        className="ring ring-yellow-300 border-4 border-blue-500 rounded-md"
         file={resume}
       >
         <Page pageNumber={1} />

@@ -5,21 +5,20 @@ const About = () => {
   return (
     <section class="text-gray-600 body-font">
       <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <h1 class="title-font font-mono font-extrabold sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-          <span class="h-12 w-16 p-4">🦕</span>Welcome
-          <span class="h-12 w-16 p-4">🦕</span>
+        <h1 class="title-font font-Poppins font-extrabold sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          Hi There!👋
         </h1>
         <img
-          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded ring-4 ring-yellow-400"
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-lg border ring-4 ring-blue-500"
           alt="nicole blonde"
           src={nic}
         />
         <div class="text-center lg:w-2/3 w-full">
-          <h1 class="title-font font-mono sm:text-4xl text-2xl mb-4 font-medium text-gray-900">
-            Software Engineer and Fun Human
+          <h1 class="title-font font-Pt sm:text-4xl text-2xl mb-4 font-medium text-gray-900">
+            Software Engineer
           </h1>
-          <p class="mb-8 leading-relaxed font-mono">
-            My name is <span className="font-bold">Nicole Martin</span>, and I
+          <p class="border-2 rounded border-black ring-2 ring-yellow-300 bg-gradient-to-r from-blue-300 to-green-300 text-black font-Pt p-2">
+            My name is <span className="font-black ">Nicole Martin</span>, and I
             love creating things. From sewing, drawing, crafting to now building
             apps and websites...I love to explore. Puzzles and using my brain is
             fun, and when I told my senior dev friend that, he told me I picked

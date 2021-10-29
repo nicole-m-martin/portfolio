@@ -13,7 +13,12 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        Poppins: ['Poppins', 'sans-serif'],
+        Pt: ['PT Mono', 'monospace'],
+      },
+    },
   },
   variants: {
     extend: {},

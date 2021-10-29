@@ -45,7 +45,7 @@ function Contact() {
 
   return (
     <>
-      <h1 className="font-mono text-2xl pt-8">Drop A Note! </h1>
+      <h1 className="font-Pt text-4xl font-semibold pt-8">Let's Chat </h1>
       <div className="p-6 m-5">
         <a href="https://twitter.com/nmartinpdx" className="">
           <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
@@ -68,7 +68,7 @@ function Contact() {
               />
 
               <label
-                className="block text-grey-darker text-lg text-left  font-bold font-mono mb-2"
+                className="block text-grey-darker text-lg text-left  font-bold font-Pt mb-2"
                 htmlFor="name"
               >
                 Name:
@@ -87,7 +87,7 @@ function Contact() {
               />
 
               <label
-                className="block text-grey-darker text-lg text-left  font-bold font-mono mb-2 pt-4"
+                className="block text-grey-darker text-lg text-left  font-bold font-Pt mb-2 pt-4"
                 htmlFor="email"
               >
                 Email:
@@ -106,7 +106,7 @@ function Contact() {
               />
 
               <label
-                className="block text-grey-darker text-lg text-left  font-bold font-mono mb-2 pt-4"
+                className="block text-grey-darker text-lg text-left  font-bold font-Pt mb-2 pt-4"
                 htmlFor="message"
               >
                 Message:
@@ -127,19 +127,20 @@ function Contact() {
               />
 
               {/* Message countdown */}
-              <p className="font-semibold text-mono">{messageCharsLeft}</p>
+              <p className="font-semibold font-Pt">{messageCharsLeft}</p>
 
               <input
-                className="h-8 px-4 m-4 text-sm text-black font-mono transition-colors duration-150 bg-white-400 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400"
+                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 bg-white-400 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400"
                 type="submit"
                 value="Send"
               />
               <input
-                className="h-8 px-4 p-5text-sm text-black font-mono transition-colors duration-150 bg-white-500 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400"
+                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 bg-white-400 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400"
                 type="reset"
                 value="Clear"
               />
             </form>
+            <div className="mb-12"></div>
           </div>
         </section>
       </div>

@@ -49,3 +49,6 @@ Documenting building my developer portfolio using:
 
 - Finished Contact Form functionality, it works!!
 - Working on About Me Component
+- About Me styled
+- Contact Form styled
+- Made Hamburger menu and responsive design overall
