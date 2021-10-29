@@ -2,7 +2,7 @@ import React from 'react';
 import nm from '../../assets/nm-logo.png';
 import { Link } from 'react-router-dom';
 
-function Header({ toggle }) {
+function Nav({ toggle }) {
   return (
     <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono bg-green-100">
       <Link to="/" className="pl-8">
@@ -42,4 +42,4 @@ function Header({ toggle }) {
   );
 }
 
-export default Header;
+export default Nav;

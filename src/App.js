@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './Components/UI/Header';
+import Nav from './Components/UI/Nav';
 import Dropdown from './Components/UI/Dropdown';
 import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header toggle={toggle} />
+        <Nav toggle={toggle} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
           <Route exact path="/">
