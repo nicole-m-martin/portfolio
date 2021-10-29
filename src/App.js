@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/UI/Header';
-import Dropdown from './components/UI/Dropdown';
+import Header from './Components/UI/Header';
+import Dropdown from './Components/UI/Dropdown';
 import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
 import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
 import ResumeContainer from './containers/resumeContainer';
-import Footer from './components/UI/Footer';
+import Footer from './Components/UI/Footer';
 
 function App() {
   // NavBar Dropdown Hamburger Menu Logic

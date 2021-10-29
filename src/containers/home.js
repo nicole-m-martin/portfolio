@@ -1,5 +1,5 @@
 import React from 'react';
-import Tech from '../components/Tech';
+import Tech from '../Components/Tech';
 import Code from '../../src/assets/code2.png';
 
 function Home() {
