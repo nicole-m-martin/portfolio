@@ -1,31 +1,33 @@
-import React from "react"
-import { projects } from './projectData'
+import React from 'react';
+import { projectArray } from './projectData';
+import ProjectItem from './ProjectItem';
+// import Beatwavez from '../../assets/beatwavez.png';
 
- 
-function Projects() {
+const Projects = () => {
   return (
+    <div>
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <div class="text-center pb-12">
+          <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
+            Here are some of my projects
+          </h1>
 
-
-<div>
-{projects.map(({image, name, stack, description, github, deployed}) => (
-    
-<section>
-<img src={image} alt='pic' />
-<h1>{name}</h1>
-<p>{stack}</p>
-<p>{description}</p>
-<a href={github}>Github</a>
-<a href={deployed}>Deployed</a>
-</section>
-    ))}
-    
-
-
-
-
-</div>
-  )}
-   
-    
+          <div class="m-3">
+            {projectArray.map((project) => (
+              <ProjectItem
+                image={project.image}
+                name={project.name}
+                stack={project.stack}
+                description={project.description}
+                github={project.github}
+                deployed={project.deployed}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
 export default Projects;

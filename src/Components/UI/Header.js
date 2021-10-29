@@ -29,7 +29,7 @@ function Header({ toggle }) {
       </div>
       <div className="pr-8 md:block hidden">
         <Link className="p-4" to="/projects">
-          Projects
+          Portfolio
         </Link>
         <Link className="p-4" to="/about">
           About
