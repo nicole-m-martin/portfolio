@@ -1,39 +1,47 @@
 import React from 'react';
+import nm from '../../assets/nm-logo.png';
+import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ toggle }) {
   return (
-    <div>
-      <div>
-        <nav className="flex justify-start md:justify-evenly flex-row space-x-4 bg-gray-300 p-2">
-          <h1>Nicole Martin</h1>
-
-          <a
-            href="/projects"
-            className="text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
-          >
-            Projects
-          </a>
-          <a
-            href="/about"
-            className="text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
-          >
-            About
-          </a>
-          <a
-            href="/contact"
-            className="text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-yellow-500 mt-4 md:mt-0"
-          >
-            Contact
-          </a>
-          <a
-            href="/resume"
-            className="text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-yellow-500 mt-4 md:mt-0"
-          >
-            Resume
-          </a>
-        </nav>
+    <nav
+      className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
+      role="navigation"
+    >
+      <Link to="/" className="pl-8">
+        <img src={nm} alt="nicole" className="h-12" />
+      </Link>
+      <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
       </div>
-    </div>
+      <div className="pr-8 md:block hidden">
+        <Link className="p-4" to="/projects">
+          Projects
+        </Link>
+        <Link className="p-4" to="/about">
+          About
+        </Link>
+        <Link className="p-4" to="/resume">
+          Resume
+        </Link>
+        <Link className="p-4" to="/contact">
+          Contact
+        </Link>
+      </div>
+    </nav>
   );
 }
 

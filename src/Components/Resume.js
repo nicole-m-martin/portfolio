@@ -2,7 +2,7 @@ import React from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
-import resume from '../../assets/resume.pdf';
+import resume from '../assets/resume.pdf';
 
 export default function Resume() {
   return (
