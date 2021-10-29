@@ -1,7 +1,7 @@
 export const projectArray = [
   {
     id: '1',
-    src: require('../../assets/beatwavez.png').default,
+    src: require('../../assets/beatwavez1.png').default,
     name: 'Beatwavez',
     stack: 'React, Javascript, Express, Node.js, Socket.io, Heroku, Netlify',
     description:
@@ -23,7 +23,7 @@ export const projectArray = [
     id: '3',
     src: require('../../assets/simpsonsquotes.png').default,
     name: 'Simpsons Quotes',
-    stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest',
+    stack: 'React, CSS3, FetchAPI ',
     description:
       'A simple app made with React Hooks that fetches a quote from The Simpsons API',
     github: 'https://github.com/nicole-m-martin/the-simpsons-quotes',
