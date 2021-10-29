@@ -1,7 +1,7 @@
 export const projectArray = [
   {
     id: '1',
-    image: require('../../assets/beatwavez.png'),
+    src: require('../../assets/beatwavez.png').default,
     name: 'Beatwavez',
     stack: 'React, Javascript, Express, Node.js, Socket.io, Heroku, Netlify',
     description:
@@ -11,7 +11,7 @@ export const projectArray = [
   },
   {
     id: '2',
-    image: '../../assets/pixelpusher.png',
+    src: require('../../assets/pixelpusher.png').default,
     name: 'Pixel Pusher',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest ',
     description:
@@ -21,7 +21,7 @@ export const projectArray = [
   },
   {
     id: '3',
-    image: '../../assets/simpsonsquotes.png',
+    src: require('../../assets/simpsonsquotes.png').default,
     name: 'Simpsons Quotes',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest',
     description:
@@ -31,7 +31,7 @@ export const projectArray = [
   },
   {
     id: '4',
-    image: '../../assets/robinfood.png',
+    src: require('../../assets/robinfood.png').default,
     name: 'Robin-Food',
     stack: 'Javascript, HTML5, CSS3',
     description:

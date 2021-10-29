@@ -24,7 +24,7 @@ const Projects = () => {
             {projectArray.map((project) => (
               <ProjectItem
                 key={project.id}
-                image={project.image}
+                src={project.src}
                 name={project.name}
                 stack={project.stack}
                 description={project.description}
