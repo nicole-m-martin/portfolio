@@ -52,3 +52,7 @@ Documenting building my developer portfolio using:
 - About Me styled
 - Contact Form styled
 - Made Hamburger menu and responsive design overall
+
+##### 10/29/21
+
+- A lot of styling
