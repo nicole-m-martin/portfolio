@@ -8,7 +8,7 @@ function Contact() {
     register,
     handleSubmit,
     watch,
-    reset,
+    // reset,
     formState: { errors },
   } = useForm();
 
