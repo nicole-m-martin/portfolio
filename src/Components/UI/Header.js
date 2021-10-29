@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 function Header({ toggle }) {
   return (
     <nav
-      className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
-      role="navigation"
+      className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono bg-gray-100"
+      role="navigation "
     >
       <Link to="/" className="pl-8">
         <img src={nm} alt="nicole" className="h-12" />
@@ -28,16 +28,16 @@ function Header({ toggle }) {
         </svg>
       </div>
       <div className="pr-8 md:block hidden">
-        <Link className="p-4" to="/projects">
+        <Link className="p-4 hover:bg-pink-400" to="/projects">
           Portfolio
         </Link>
-        <Link className="p-4" to="/about">
+        <Link className="p-4 hover:bg-yellow-400" to="/about">
           About
         </Link>
-        <Link className="p-4" to="/resume">
+        <Link className="p-4 hover:bg-blue-400" to="/resume">
           Resume
         </Link>
-        <Link className="p-4" to="/contact">
+        <Link className="p-4 hover:bg-green-400" to="/contact">
           Contact
         </Link>
       </div>

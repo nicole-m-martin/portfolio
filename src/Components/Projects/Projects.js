@@ -15,6 +15,7 @@ const Projects = () => {
           <div class="m-3">
             {projectArray.map((project) => (
               <ProjectItem
+                key={project.id}
                 image={project.image}
                 name={project.name}
                 stack={project.stack}

@@ -1,7 +1,7 @@
 export const projectArray = [
   {
     id: '1',
-    image: './beatwavez.png',
+    image: require('../../assets/beatwavez.png'),
     name: 'Beatwavez',
     stack: 'React, Javascript, Express, Node.js, Socket.io, Heroku, Netlify',
     description:
@@ -11,17 +11,17 @@ export const projectArray = [
   },
   {
     id: '2',
-    image: 'pixelpusher.png',
+    image: '../../assets/pixelpusher.png',
     name: 'Pixel Pusher',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest ',
     description:
-      'Pixel Pusher is a terminal-based drawing art app that allows users to unleash their creativity in an easy and fun way, using only back-end technologies. This is the canvas side of the app where the user can draw with clicks of their mouse.',
+      'Pixel Pusher is a terminal-based drawing art app that allows users to unleash their creativity in an easy and fun way, using only back-end technologies. The canvas is where the user can draw with clicks of their mouse.',
     github: 'https://github.com/st-ART-up/the-canvas',
     deployed: 'https://www.npmjs.com/package/@st-art-up/pixel-pusher',
   },
   {
     id: '3',
-    image: 'simpsonsquotes.png',
+    image: '../../assets/simpsonsquotes.png',
     name: 'Simpsons Quotes',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest',
     description:
@@ -31,7 +31,7 @@ export const projectArray = [
   },
   {
     id: '4',
-    image: 'robinfood.png',
+    image: '../../assets/robinfood.png',
     name: 'Robin-Food',
     stack: 'Javascript, HTML5, CSS3',
     description:

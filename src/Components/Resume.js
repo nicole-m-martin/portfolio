@@ -8,7 +8,7 @@ export default function Resume() {
   return (
     <div className="grid place-items-center h-screen">
       <Document
-        className="border-double border-4 border-blue-500"
+        className="ring ring-yellow-300 border-4 border-blue-500"
         file={resume}
       >
         <Page pageNumber={1} />

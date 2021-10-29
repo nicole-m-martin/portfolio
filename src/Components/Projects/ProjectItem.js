@@ -9,7 +9,7 @@ const ProjectItem = ({ image, name, stack, description, github, deployed }) => {
             <div className="lg:flex lg:items-center">
               <div className="lg:flex-shrink-0"></div>
               <div className="flex flex-wrap justify-center">
-                <img className="rounded-lg lg:w-64" src={image} />
+                <img className="rounded-lg lg:w-64" src={image} alt="pic" />
                 <h1 className="font-bold font-mono text-xl mb-2">{name}</h1>
                 <p className="text-gray-700 text-base">{stack}</p>
                 <p>{description}</p>
