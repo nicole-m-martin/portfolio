@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Nav({ toggle }) {
   return (
-    <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono bg-green-100">
+    <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono bg-green-200">
       <Link to="/" className="pl-8">
-        <img src={nm} alt="nicole" className="h-12" />
+        <img src={nm} alt="nicole" className="h-12 hover:bg-green-300" />
       </Link>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg

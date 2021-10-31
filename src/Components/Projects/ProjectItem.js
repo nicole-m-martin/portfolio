@@ -5,7 +5,7 @@ const ProjectItem = ({ src, name, stack, description, github, deployed }) => {
     <>
       <div className="container px-5 py-10 mx-auto">
         <div className="flex flex-wrap -m-2">
-          <div className="flex flex-wrap text-black text-center bg-green-200 px-5 py-5 m-2 rounded border-2 border-black ring-2 ring-pink-300">
+          <div className="flex flex-wrap text-black text-center bg-gradient-to-r from-green-300 to-blue-300 px-5 py-5 m-2 rounded border-2 border-black ring-2 ring-yellow-300">
             <div className="lg:flex lg:items-center">
               <div className="flex flex-wrap justify-center">
                 <img
@@ -20,13 +20,13 @@ const ProjectItem = ({ src, name, stack, description, github, deployed }) => {
                 <p className="font-Poppins m-3">{description}</p>
                 <a
                   className="block mt-1 text-lg leading-tight font-semibold 
-                  font-Poppins text-gray-900 hover:bg-pink-300 m-5"
+                  font-Pt text-gray-900 hover:bg-pink-300 m-5"
                   href={github}
                 >
                   Github
                 </a>
                 <a
-                  className="block mt-1 text-lg leading-tight font-semibold font-Poppins text-gray-900 hover:bg-yellow-300 m-3"
+                  className="block mt-1 text-lg leading-tight font-semibold font-Pt text-gray-900 hover:bg-yellow-300 m-3"
                   href={deployed}
                 >
                   Deployed

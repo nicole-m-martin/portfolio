@@ -45,7 +45,7 @@ function Contact() {
 
   return (
     <>
-      <h1 className="font-Pt text-4xl font-semibold pt-8">Let's Chat </h1>
+      <h1 className="font-Pt text-4xl font-semibold pt-8">Let's Chat! </h1>
       <div className="p-6 m-5">
         <a href="https://twitter.com/nmartinpdx" className="">
           <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>

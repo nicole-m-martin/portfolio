@@ -56,4 +56,5 @@ Documenting building my developer portfolio using:
 ##### 10/29/21
 
 - A lot of styling
--
+- Finished v1 MVP of site
+- Deployed on Netlify

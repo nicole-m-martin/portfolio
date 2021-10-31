@@ -5,7 +5,7 @@ export const projectArray = [
     name: 'Beatwavez',
     stack: 'React, Javascript, Express, Node.js, Socket.io, Heroku, Netlify',
     description:
-      'BeatWavez is a Jackbox-style karaoke party app that allows users to create and join party rooms, manage a queue, chat with each other, and (most importantly) sing along to lyrics from videos pulled via the YouTube API. This app was built mobile-first with React and Express, utilizing socket.io and material UI.',
+      'BeatWavez is a Jackbox-style karaoke party app that allows users to create and join party rooms, manage a queue, chat with each other, and (most importantly) sing along to lyrics from videos pulled via the YouTube API. This app was built mobile-first with React and Express, utilizing socket.io and Material UI.',
     github: 'https://github.com/the-treblemakers/BeatWavez-FE',
     deployed: 'https://beatwavez.com/',
   },
@@ -25,7 +25,7 @@ export const projectArray = [
     name: 'Simpsons Quotes',
     stack: 'React, CSS3, FetchAPI ',
     description:
-      'A simple app made with React Hooks that fetches a quote from The Simpsons API',
+      'A simple app made with React Hooks that fetches a quote from The Simpsons API. When you click the button a new quote renders.',
     github: 'https://github.com/nicole-m-martin/the-simpsons-quotes',
     deployed: 'https://simpsons-quote-time.netlify.app/',
   },
