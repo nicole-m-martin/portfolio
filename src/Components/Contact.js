@@ -48,8 +48,10 @@ function Contact() {
   const messageCharsLeft = 2500 - message.length;
 
   return (
-    <>
-      <h1 className="font-Pt text-4xl font-semibold pt-8">Let's Chat! </h1>
+    <div className="bg-white dark:bg-gray-600">
+      <h1 className="font-Pt dark:text-white text-4xl font-semibold pt-8">
+        Let's Chat!{' '}
+      </h1>
       <div className="p-6 m-5">
         {/* social links */}
         <a href="https://twitter.com/nmartinpdx" className="">
@@ -73,7 +75,7 @@ function Contact() {
               />
 
               <label
-                className="block text-grey-darker text-lg text-left  font-bold font-Pt mb-2"
+                className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2"
                 htmlFor="name"
               >
                 Name:
@@ -84,7 +86,7 @@ function Contact() {
                 </span>
               )}
               <input
-                className="border-2 border-black ring ring-yellow-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                className="border-2 border-black ring ring-yellow-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white"
                 type="text"
                 name="name"
                 aria-invalid={errors.name ? 'true' : 'false'}
@@ -92,7 +94,7 @@ function Contact() {
               />
 
               <label
-                className="block text-grey-darker text-lg text-left  font-bold font-Pt mb-2 pt-4"
+                className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4"
                 htmlFor="email"
               >
                 Email:
@@ -103,7 +105,7 @@ function Contact() {
                 </span>
               )}
               <input
-                className="border-2 border-black ring ring-green-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline "
+                className="border-2 border-black ring ring-green-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white "
                 type="email"
                 name="email"
                 aria-invalid={errors.email ? 'true' : 'false'}
@@ -111,7 +113,7 @@ function Contact() {
               />
 
               <label
-                className="block text-grey-darker text-lg text-left  font-bold font-Pt mb-2 pt-4"
+                className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4"
                 htmlFor="message"
               >
                 Message:
@@ -122,7 +124,7 @@ function Contact() {
                 </span>
               )}
               <textarea
-                className="border-2 border-black ring rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none "
+                className="border-2 border-black ring rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none dark:bg-white "
                 {...register('message', { required: true, maxLength: 2500 })}
                 name="message"
                 id=""
@@ -132,16 +134,18 @@ function Contact() {
               />
 
               {/* Message countdown */}
-              <p className="font-semibold font-Pt">{messageCharsLeft}</p>
+              <p className="font-semibold font-Pt dark:text-white">
+                {messageCharsLeft}
+              </p>
 
               <input
-                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 bg-white-400 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400"
+                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-green-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400 dark:hover:bg-green-300"
                 type="submit"
                 value="Send"
               />
 
               <input
-                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 bg-white-400 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400"
+                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-pink-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400 dark:hover:bg-pink-300"
                 type="button"
                 onClick={() =>
                   reset({
@@ -161,7 +165,7 @@ function Contact() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
 

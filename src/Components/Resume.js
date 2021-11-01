@@ -6,7 +6,7 @@ import resume from '../assets/resume.pdf';
 
 export default function Resume() {
   return (
-    <div className="grid place-items-center h-auto p-5 ">
+    <div className="grid place-items-center h-auto p-5 bg-white dark:bg-gray-600 ">
       <Document
         className="ring ring-yellow-300 border-4 border-blue-500 rounded-md"
         file={resume}

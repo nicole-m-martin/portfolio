@@ -1,7 +1,6 @@
 # Nicole Martin Portfolio 2021:
 
-<!--
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3ba44140-0650-4f18-8f58-5776c77e1469/deploy-status)](https://app.netlify.com/sites/nicolem/deploys) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ba44140-0650-4f18-8f58-5776c77e1469/deploy-status)](https://app.netlify.com/sites/nicolem/deploys)
 
 Documenting building my developer portfolio using:
 
@@ -13,6 +12,7 @@ Documenting building my developer portfolio using:
   - React-Hook-Form
   - EmailJS
   - React-Pdf
+  - Zustand Middleware
 
 ## Goals:
 
@@ -61,3 +61,10 @@ Documenting building my developer portfolio using:
 - A lot of styling
 - Finished v1 MVP of site
 - Deployed on Netlify
+
+#### 10/30/21
+
+- Cleaned up files
+- Added bounce animation
+- Light/Dark Mode!!
+- More styling and update info

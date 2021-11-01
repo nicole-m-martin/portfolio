@@ -9,6 +9,8 @@ import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
 import ResumeContainer from './containers/resumeContainer';
 import Footer from './Components/UI/Footer';
+import { useTheme } from './darkMode/hooks/useTheme';
+import useThemeStore from './darkMode/stores/useThemeStore';
 
 function App() {
   // NavBar Dropdown Hamburger Menu Logic
@@ -32,10 +34,14 @@ function App() {
     };
   });
 
+  // Dark Mode!
+  const toggleTheme = useThemeStore((state) => state.toggleTheme);
+  useTheme();
+
   return (
     <div className="App">
       <Router>
-        <Nav toggle={toggle} />
+        <Nav toggle={toggle} toggleTheme={toggleTheme} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
           <Route exact path="/">

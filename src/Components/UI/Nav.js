@@ -2,12 +2,16 @@ import React from 'react';
 import nm from '../../assets/nm-logo.png';
 import { Link } from 'react-router-dom';
 
-function Nav({ toggle }) {
+function Nav({ toggle, toggleTheme }) {
   return (
-    <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono bg-green-200">
+    <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-Pt bg-green-200">
       <Link to="/" className="pl-8">
         <img src={nm} alt="nicole" className="h-12 hover:bg-green-300" />
       </Link>
+      <button className="font-Pt" onClick={toggleTheme}>
+        <i className="fas fa-moon"></i>
+        <p className="font-Pt">Dark Mode!</p>
+      </button>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

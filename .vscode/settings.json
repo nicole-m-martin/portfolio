@@ -3,5 +3,6 @@
   "prettier.jsxSingleQuote": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "cSpell.words": ["Zustand"]
 }

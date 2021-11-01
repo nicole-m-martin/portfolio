@@ -9,16 +9,28 @@ const Dropdown = ({ isOpen, toggle }) => {
       }
       onClick={toggle}
     >
-      <Link className="p-4 hover:bg-pink-300 font-mono" to="/projects">
+      <Link
+        className="p-4 hover:bg-pink-300 dark:hover:bg-pink-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
+        to="/projects"
+      >
         Portfolio
       </Link>
-      <Link className="p-4 hover:bg-yellow-300 font-mono" to="/about">
+      <Link
+        className="p-4 hover:bg-yellow-300 dark:hover:bg-yellow-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
+        to="/about"
+      >
         About
       </Link>
-      <Link className="p-4 hover:bg-blue-300 font-mono" to="/resume">
+      <Link
+        className="p-4 hover:bg-blue-300 dark:hover:bg-blue-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
+        to="/resume"
+      >
         Resume
       </Link>
-      <Link className="p-4 hover:bg-green-300 font-mono" to="/contact">
+      <Link
+        className="p-4 hover:bg-green-300 dark:hover:bg-green-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
+        to="/contact"
+      >
         Contact
       </Link>
     </div>
