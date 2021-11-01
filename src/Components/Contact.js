@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
+import { resetWarningCache } from 'prop-types';
 init('user_FkoSWYEQ8F2cqar2OKJ2V');
 
 function Contact() {
@@ -8,7 +9,7 @@ function Contact() {
     register,
     handleSubmit,
     watch,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -19,6 +20,9 @@ function Contact() {
     const numString = '000000' + ((Math.random() * 1000000) | 0);
     setContactNumber(numString.substring(numString.length - 6));
   };
+
+  // Message Sent alert
+  const [successfulEmail, setSuccessfulEmail] = useState(false);
 
   const onSubmit = (data) => {
     // console.log(data);
@@ -37,6 +41,7 @@ function Contact() {
         console.log('FAILED...', error);
       }
     );
+    setSuccessfulEmail(true);
   };
 
   // Message countdown
@@ -47,6 +52,7 @@ function Contact() {
     <>
       <h1 className="font-Pt text-4xl font-semibold pt-8">Let's Chat! </h1>
       <div className="p-6 m-5">
+        {/* social links */}
         <a href="https://twitter.com/nmartinpdx" className="">
           <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
         </a>
@@ -134,12 +140,24 @@ function Contact() {
                 type="submit"
                 value="Send"
               />
+
               <input
                 className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 bg-white-400 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400"
-                type="reset"
+                type="button"
+                onClick={() =>
+                  reset({
+                    name: '',
+                    email: '',
+                    message: '',
+                  })
+                }
                 value="Clear"
               />
+              {/* Form Submit Success Message */}
             </form>
+            {successfulEmail && (
+              <span className="italic text-green-500">Email Sent</span>
+            )}
             <div className="mb-12"></div>
           </div>
         </section>

@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <div className="grid place-items-center">
-        <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black font-Pt font-extrabold m-14">
+        <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black font-Pt font-extrabold m-14 animate-bounce">
           Hello World🌎
         </h1>
         <p className="text-lg font-Poppins italic">
@@ -15,7 +15,7 @@ function Home() {
         </p>
         <img src={Code} alt="comp" />
         <h3 className="m-5 text-lg font-Poppins py-2">💛 Tech I love 💛</h3>
-        <section className="grid grid-flow-row grid-cols-3 grid-rows-1 gap-16 sm:gap-10 border-2 rounded border-black ring-2 ring-blue-300 bg-gradient-to-r from-green-300 to-blue-300 font-Pt p-2">
+        <section className="grid grid-flow-row grid-cols-3 grid-rows-1 gap-10 sm:gap-9 border-2 rounded border-black ring-2 ring-blue-300 bg-gradient-to-r from-green-300 to-blue-300 font-Pt p-2">
           <Tech one="HTML5" two="CSS3" three="Javascript" four="React" />
           <Tech
             one="Node.js"
@@ -26,7 +26,7 @@ function Home() {
           <Tech one="Redux" two="Supertest" three="Jest" four="Git/GitHub" />
         </section>
 
-        <span className="my-12 sm:my-10"></span>
+        <span className="mt-28 sm:my-28"></span>
       </div>
     </>
   );

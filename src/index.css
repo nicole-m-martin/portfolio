@@ -23,3 +23,7 @@
 .alert {
   @apply italic text-pink-500;
 }
+
+.resume_box {
+  @apply ring ring-yellow-300 border-4 border-blue-500 rounded-md max-w-full h-auto align-middle;
+}

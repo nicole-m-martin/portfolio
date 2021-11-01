@@ -1,5 +1,8 @@
 # Nicole Martin Portfolio 2021:
 
+<!--
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ba44140-0650-4f18-8f58-5776c77e1469/deploy-status)](https://app.netlify.com/sites/nicolem/deploys) -->
+
 Documenting building my developer portfolio using:
 
 - React
