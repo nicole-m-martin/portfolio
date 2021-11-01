@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
-import { resetWarningCache } from 'prop-types';
 init('user_FkoSWYEQ8F2cqar2OKJ2V');
 
 function Contact() {
