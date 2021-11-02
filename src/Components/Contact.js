@@ -49,10 +49,7 @@ function Contact() {
 
   return (
     <div className="bg-white dark:bg-gray-600">
-      <h1 className="font-Pt dark:text-white text-4xl font-semibold pt-8">
-        Let's Chat!{' '}
-      </h1>
-      <div className="p-6 m-5">
+      <div className="p-10">
         {/* social links */}
         <a href="https://twitter.com/nmartinpdx" className="">
           <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
@@ -64,7 +61,10 @@ function Contact() {
           <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
         </a>
       </div>
-      <div className=" flex justify-center items-center">
+      <h1 className="font-Pt dark:text-white text-4xl font-semibold p-4">
+        Let's Chat!{' '}
+      </h1>
+      <div className="flex justify-center items-center p-5">
         <section className="flex justify-center">
           <div className="w-full max-w-xs">
             <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>

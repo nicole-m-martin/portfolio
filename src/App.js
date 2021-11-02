@@ -7,7 +7,6 @@ import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
 import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
-import ResumeContainer from './containers/resumeContainer';
 import Footer from './Components/UI/Footer';
 import { useTheme } from './darkMode/hooks/useTheme';
 import useThemeStore from './darkMode/stores/useThemeStore';
@@ -50,7 +49,6 @@ function App() {
           <Route exact path="/projects" component={ProjectContainer} />
           <Route exact path="/about" component={AboutContainer} />
           <Route exact path="/contact" component={ContactContainer} />
-          <Route exact path="/resume" component={ResumeContainer} />
         </Switch>
         <Footer />
       </Router>

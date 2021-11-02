@@ -23,7 +23,8 @@ const Dropdown = ({ isOpen, toggle }) => {
       </Link>
       <Link
         className="p-4 hover:bg-blue-300 dark:hover:bg-blue-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
-        to="/resume"
+        target={'_blank'}
+        to="/resume.pdf"
       >
         Resume
       </Link>

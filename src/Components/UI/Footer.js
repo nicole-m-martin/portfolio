@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <section className="">
-      <div className="flex justify-evenly items-center h-16 bg-green-200 text-black">
-        <div className="">
+    <section className="fixed bottom-0 w-screen">
+      <div className="flex justify-evenly items-center bg-green-200 h-10 text-black ">
+        <div>
           <a href="https://twitter.com/nmartinpdx">
             <i className="fab fa-twitter-square fa-2x m-4 hover:bg-yellow-300"></i>
           </a>

@@ -5,8 +5,8 @@ import Windows from '../../assets/coding.png';
 
 const Projects = () => {
   return (
-    <div className="bg-white dark:bg-gray-700">
-      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 bg-white dark:bg-gray-700">
+    <div className="bg-white dark:bg-gray-600">
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 bg-white dark:bg-gray-600">
         <div class="text-center pb-12">
           <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 dark:text-white font-Poppins">
             Here are some of my projects:
