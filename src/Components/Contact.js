@@ -48,7 +48,7 @@ function Contact() {
   const messageCharsLeft = 2500 - message.length;
 
   return (
-    <div className="bg-white dark:bg-gray-600">
+    <div className="bg-white dark:bg-gray-600 h-screen">
       <div className="p-10">
         {/* social links */}
         <a href="https://twitter.com/nmartinpdx" className="">

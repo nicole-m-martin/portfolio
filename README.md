@@ -68,3 +68,9 @@ Documenting building my developer portfolio using:
 - Added bounce animation
 - Light/Dark Mode!!
 - More styling and update info
+
+#### 11/2/2021
+
+- Removed unwanted files
+- Fixed styling on light/dark mode
+- Fixed Resume, now open in new window
