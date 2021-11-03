@@ -5,7 +5,7 @@ const ProjectItem = ({ src, name, stack, description, github, deployed }) => {
     <>
       <div className="container px-5 py-10 mx-auto  ">
         <div className="flex flex-wrap -m-2">
-          <div className="flex flex-wrap text-black text-center bg-gradient-to-r from-green-300 to-blue-300 px-5 py-5 m-2 rounded border-2 border-black ring-2 ring-yellow-300">
+          <div className="flex flex-wrap text-black text-center bg-gradient-to-r from-yellow-300 to-pink-300  px-5 py-5 m-2 rounded border-2 border-black ring-2 ring-yellow-300 dark:ring-pink-400">
             <div className="lg:flex lg:items-center">
               <div className="flex flex-wrap justify-center">
                 <img

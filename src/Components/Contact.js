@@ -86,7 +86,7 @@ function Contact() {
                 </span>
               )}
               <input
-                className="border-2 border-black ring ring-yellow-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white"
+                className="border-2 border-black ring ring-yellow-300 dark:ring-pink-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white"
                 type="text"
                 name="name"
                 aria-invalid={errors.name ? 'true' : 'false'}
@@ -105,7 +105,7 @@ function Contact() {
                 </span>
               )}
               <input
-                className="border-2 border-black ring ring-green-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white "
+                className="border-2 border-black ring ring-green-300 dark:ring-blue-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white "
                 type="email"
                 name="email"
                 aria-invalid={errors.email ? 'true' : 'false'}
@@ -124,7 +124,7 @@ function Contact() {
                 </span>
               )}
               <textarea
-                className="border-2 border-black ring rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none dark:bg-white "
+                className="border-2 border-black ring ring-blue-400 dark:ring-green-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none dark:bg-white "
                 {...register('message', { required: true, maxLength: 2500 })}
                 name="message"
                 id=""

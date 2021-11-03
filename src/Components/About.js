@@ -9,7 +9,7 @@ const About = () => {
           Hi There!👋
         </h1>
         <img
-          className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-lg border ring-4 ring-blue-500 my-5"
+          className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-lg border ring-4 ring-green-400 dark:ring-blue-500 my-5"
           alt="nicole blonde"
           src={nic}
         />
@@ -17,7 +17,7 @@ const About = () => {
           <h1 className="title-font font-Pt sm:text-4xl text-2xl mb-4 font-medium text-gray-600 dark:text-gray-300">
             Software Engineer
           </h1>
-          <p className="border-2 rounded border-black ring-2 ring-green-300 bg-gradient-to-r from-blue-300 to-green-300 text-black dark:text-black font-Pt p-2 my-7 ">
+          <p className="border-2 rounded border-black ring-2 ring-green-400 dark:ring-blue-500 bg-gradient-to-r from-blue-300 to-green-300 text-black dark:text-black font-Pt p-2 my-7 ">
             My name is{' '}
             <span className="text-gray-900 dark:text-white ">
               Nicole Martin
@@ -30,7 +30,7 @@ const About = () => {
             everyone here in the Tech world and I'm excited to be a part of
             building the future.
           </p>
-          <p className="border-2 rounded border-black ring-2 ring-yellow-300 bg-gradient-to-r from-yellow-300 to-pink-300 text-black dark:text-black font-Pt p-2">
+          <p className="border-2 rounded border-black ring-2 ring-yellow-300 dark:ring-pink-400 bg-gradient-to-r from-yellow-300 to-pink-300 text-black dark:text-black font-Pt p-2">
             When I'm not coding, I like to hang with my two dogs (Cooper and
             Ruby), hike in the beautiful PNW, drink too much coffee,
             rollerblade, dance, meet new friends, pretend to be Lisa Simpson,
