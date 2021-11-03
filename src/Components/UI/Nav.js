@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 
 function Nav({ toggle, toggleTheme }) {
   return (
-    <nav className="flex justify-between items-center h-15 bg-white text-black relative shadow-sm font-Pt bg-green-200 sticky top-0">
+    <nav className="flex justify-between items-center h-15 bg-white text-black relative shadow-sm font-Pt bg-green-200 dark:bg-blue-300 sticky top-0">
       <Link to="/" className="pl-8">
-        <img src={nm} alt="nicole" className="h-12 hover:bg-green-300" />
+        <img
+          src={nm}
+          alt="nicole"
+          className="h-12 hover:bg-green-300 dark:hover:bg-blue-400"
+        />
       </Link>
       <button className="font-Pt" onClick={toggleTheme}>
         <i className="fas fa-moon"></i>
