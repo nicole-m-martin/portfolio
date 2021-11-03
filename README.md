@@ -74,3 +74,8 @@ Documenting building my developer portfolio using:
 - Removed unwanted files
 - Fixed styling on light/dark mode
 - Fixed Resume, now open in new window
+
+#### 11/3/2021
+
+- Added meta tags
+- More fun with TailwindCSS
