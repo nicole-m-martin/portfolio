@@ -19,7 +19,7 @@ function Home() {
             and I love coffee and coding.
           </p>
           <img src={Code} alt="comp" />
-          <h3 className="text-lg font-Poppins text-gray-600 dark:text-gray-300 mt-16">
+          <h3 className="text-lg font-Poppins text-gray-600 dark:text-gray-300 mt-4">
             💙 Tech I love 💙
           </h3>
           <section className="grid grid-flow-row md:grid-cols-3 sm:grid-cols-1 grid-rows-1 gap-10 sm:gap-2 border-2 mt-5 rounded border-black ring-2 ring-green-400 bg-gradient-to-r from-blue-300 to-green-300 font-Pt dark:font-Pt p-2 text-gray-600 dark:text-white dark:ring-blue-400">

@@ -49,7 +49,7 @@ function Contact() {
 
   return (
     <div className="bg-white dark:bg-gray-600 h-screen">
-      <div className="p-10">
+      <div className="p-5">
         {/* social links */}
         <a href="https://twitter.com/nmartinpdx" className="">
           <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
@@ -61,7 +61,7 @@ function Contact() {
           <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
         </a>
       </div>
-      <h1 className="font-Pt dark:text-white text-4xl font-semibold p-4 sm:p-1">
+      <h1 className="font-Pt dark:text-white text-4xl font-semibold mt-.5">
         Let's Chat!{' '}
       </h1>
       <div className="flex justify-center items-center p-5">
