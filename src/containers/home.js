@@ -7,11 +7,11 @@ function Home() {
     <>
       <div className="bg-white dark:bg-gray-600 h-screen">
         <div className="bg-white dark:bg-gray-600 grid place-items-center">
-          <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl text-gray-900 dark:text-white font-Pt font-extrabold m-14">
+          <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl text-gray-900 dark:text-white font-Pt font-extrabold lg:m-14 md:m-10 sm:m-2">
             Hello World🌎
           </h1>
 
-          <p className="text-lg font-Poppins italic text-gray-600 dark:text-gray-300">
+          <p className="text-lg font-Poppins italic text-gray-600 dark:text-gray-300 mt-10 sm:mt-2">
             I'm{' '}
             <span className="text-blue-500 dark:text-green-400 text-lg">
               Nicole
