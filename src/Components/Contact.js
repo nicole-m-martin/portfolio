@@ -61,7 +61,7 @@ function Contact() {
           <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
         </a>
       </div>
-      <h1 className="font-Pt dark:text-white text-4xl font-semibold p-4">
+      <h1 className="font-Pt dark:text-white text-4xl font-semibold p-4 sm:p-1">
         Let's Chat!{' '}
       </h1>
       <div className="flex justify-center items-center p-5">
