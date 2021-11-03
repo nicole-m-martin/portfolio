@@ -1,6 +1,5 @@
 import React from 'react';
 import nic from '../assets/NicMartin.png';
-import social from '../assets/socialBanner.png';
 
 const About = () => {
   return (
@@ -9,7 +8,7 @@ const About = () => {
         <h1 className="title-font font-Poppins font-extrabold sm:text-5xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">
           Hi There!👋
         </h1>
-        <img className="hidden" src={social} alt="social" />
+
         <img
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-lg border ring-4 ring-green-400 dark:ring-blue-500 my-5"
           alt="nicole blonde"
