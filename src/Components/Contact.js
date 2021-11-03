@@ -161,7 +161,6 @@ function Contact() {
             {successfulEmail && (
               <span className="italic text-green-500">Email Sent</span>
             )}
-            <div className="mb-12"></div>
           </div>
         </section>
       </div>
