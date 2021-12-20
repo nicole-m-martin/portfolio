@@ -2,6 +2,13 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ba44140-0650-4f18-8f58-5776c77e1469/deploy-status)](https://app.netlify.com/sites/nicolem/deploys)
 
+### Light Mode:
+<img width="1086" alt="Screen Shot 2021-12-20 at 12 03 52 PM" src="https://user-images.githubusercontent.com/71411431/146826007-149121e4-5193-40d9-b8f1-f7c473261fd2.png">
+
+### Dark Mode:
+<img width="1085" alt="Screen Shot 2021-12-20 at 12 04 20 PM" src="https://user-images.githubusercontent.com/71411431/146826179-9b8ad7ae-a669-4baa-94f1-a371e0091bd8.png">
+
+
 Documenting building my developer portfolio using:
 
 - React
