@@ -1,6 +1,16 @@
 export const projectArray = [
   {
     id: '1',
+    src: require('../../assets/quickonthedraw.png').default,
+    name: 'Quick on the Draw',
+    stack: 'React, Javascript, React Canvas Draw, TailwindCSS, Craco,  Netlify',
+    description:
+      'Quick on the Draw is an app to encourage people to take breaks by giving them a fun, timed activity to take their mind off of work.',
+    github: 'https://github.com/Quick-on-the-Draw/quick-on-the-draw-app',
+    deployed: 'https://quick-on-the-draw.netlify.app/',
+  },
+  {
+    id: '2',
     src: require('../../assets/beatwavez1.png').default,
     name: 'Beatwavez',
     stack: 'React, Javascript, Express, Node.js, Socket.io, Heroku, Netlify',
@@ -10,7 +20,7 @@ export const projectArray = [
     deployed: 'https://beatwavez.com/',
   },
   {
-    id: '2',
+    id: '3',
     src: require('../../assets/pixelpusher.png').default,
     name: 'Pixel Pusher',
     stack: 'Node.js, Blessed, Chalk, cFonts, Express, Supertest ',
@@ -20,7 +30,7 @@ export const projectArray = [
     deployed: 'https://www.npmjs.com/package/@st-art-up/pixel-pusher',
   },
   {
-    id: '3',
+    id: '4',
     src: require('../../assets/simpsonsquotes.png').default,
     name: 'Simpsons Quotes',
     stack: 'React, CSS3, FetchAPI ',
@@ -30,7 +40,7 @@ export const projectArray = [
     deployed: 'https://simpsons-quote-time.netlify.app/',
   },
   {
-    id: '4',
+    id: '5',
     src: require('../../assets/robinfood.png').default,
     name: 'Robin-Food',
     stack: 'Javascript, HTML5, CSS3',
