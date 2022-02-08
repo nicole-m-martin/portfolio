@@ -20,17 +20,19 @@ const Projects = () => {
           </div>
 
           <div class="m-3">
-            {projectArray.map((project) => (
-              <ProjectItem
-                key={project.id}
-                src={project.src}
-                name={project.name}
-                stack={project.stack}
-                description={project.description}
-                github={project.github}
-                deployed={project.deployed}
-              />
-            ))}
+            {projectArray.map(
+              ({ id, src, name, stack, description, github, deployed }) => (
+                <ProjectItem
+                  key={id}
+                  src={src}
+                  name={name}
+                  stack={stack}
+                  description={description}
+                  github={github}
+                  deployed={deployed}
+                />
+              )
+            )}
           </div>
         </div>
       </section>

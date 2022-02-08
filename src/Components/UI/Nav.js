@@ -40,7 +40,7 @@ function Nav({ toggle, toggleTheme }) {
           About
         </Link>
         <Link
-          className="p-4 hover:bg-blue-300"
+          className="p-4 hover:bg-blue-300 dark:hover:bg-blue-400"
           target={'_blank'}
           to="/resume.pdf"
         >
