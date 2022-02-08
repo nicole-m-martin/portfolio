@@ -11,33 +11,31 @@ const Dropdown = ({ isOpen, toggle }) => {
       }
       onClick={toggle}
     >
-      <Link
-        className="p-4 hover:bg-pink-300 dark:hover:bg-pink-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
-        to="/projects"
-      >
+      <Link className={styles.projectTab} to="/projects">
         Portfolio
       </Link>
-      <Link
-        className="p-4 hover:bg-yellow-300 dark:hover:bg-yellow-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
-        to="/about"
-      >
+      <Link className={styles.aboutTab} to="/about">
         About
       </Link>
-      <Link
-        className="p-4 hover:bg-blue-300 dark:hover:bg-blue-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
-        target={'_blank'}
-        to="/resume.pdf"
-      >
+      <Link className={styles.resumeTab} target={'_blank'} to="/resume.pdf">
         Resume
       </Link>
-      <Link
-        className="p-4 hover:bg-green-300 dark:hover:bg-green-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt"
-        to="/contact"
-      >
+      <Link className={styles.contactTab} to="/contact">
         Contact
       </Link>
     </div>
   );
+};
+
+const styles = {
+  projectTab:
+    'p-4 hover:bg-pink-300 dark:hover:bg-pink-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
+  aboutTab:
+    'p-4 hover:bg-yellow-300 dark:hover:bg-yellow-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
+  resumeTab:
+    'p-4 hover:bg-blue-300 dark:hover:bg-blue-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
+  contactTab:
+    'p-4 hover:bg-green-300 dark:hover:bg-green-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
 };
 
 export default Dropdown;
