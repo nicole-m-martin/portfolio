@@ -1,6 +1,7 @@
 import React from 'react';
 import Tech from '../Components/Tech';
 import Computer from '../../src/assets/computer.png';
+import Giphy from '../Components/Giphy/Giphy';
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
             />
             <Tech one="Redux" two="Supertest" three="Jest" four="Git/GitHub" />
           </section>
+          <Giphy />
         </div>
       </div>
     </>

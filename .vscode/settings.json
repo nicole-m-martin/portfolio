@@ -4,5 +4,5 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["quickonthedraw", "Zustand"]
+  "cSpell.words": ["Gifs", "Giphy", "quickonthedraw", "Zustand"]
 }
