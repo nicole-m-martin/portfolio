@@ -1,6 +1,6 @@
 import React from 'react';
 import nic from '../assets/NicMartin.png';
-import social from '../assets/socialBanner.png';
+// import social from '../assets/socialBanner.png';
 
 const About = () => {
   return (
@@ -19,15 +19,15 @@ const About = () => {
             world. I appreciate change, learning new things daily, and finding
             all the good in Tech. I study full-stack, but really enjoy front-end
             development. I believe that there is room for everyone here in the
-            Tech world and I'm excited to be a part of building the future.
+            Tech community and I'm excited to be a part of building the future.
           </p>
           <p className={styles.hobbies}>
             When I'm not coding, I like to hang with my two dogs (Cooper and
-            Ruby), hike in the beautiful PNW, drink too much coffee,
-            rollerblade, dance, meet new friends, pretend to be Lisa Simpson,
-            eat and cook vegan food, play video games, rescue animals, and
-            explore my amazing hometown of Portland, OR. Always up for
-            adventure!
+            Ruby) and partner Greg. You can find me hiking in the beautiful PNW,
+            drinking too much coffee, rollerblading, dancing, meeting new
+            friends, pretending to be Lisa Simpson, eating and cooking vegan
+            food, playing video games, rescuing animals, and exploring my
+            amazing hometown of Portland, OR. Always up for adventure!
           </p>
         </div>
       </div>

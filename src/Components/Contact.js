@@ -12,20 +12,11 @@ function Contact() {
     formState: { errors },
   } = useForm();
 
-  // Create a unique 6-digit string of 6 numbers to use as a Contact Number
-  const [contactNumber, setContactNumber] = useState('000000');
-
-  const generateContactNumber = () => {
-    const numString = '000000' + ((Math.random() * 1000000) | 0);
-    setContactNumber(numString.substring(numString.length - 6));
-  };
-
   // Message Sent alert
   const [successfulEmail, setSuccessfulEmail] = useState(false);
 
   const onSubmit = (data) => {
     // console.log(data);
-    generateContactNumber();
 
     sendForm(
       'default_service',
@@ -48,31 +39,32 @@ function Contact() {
   const messageCharsLeft = 2500 - message.length;
 
   return (
-    <div className="bg-white dark:bg-gray-600 h-screen">
-      <div className="p-5">
-        {/* social links */}
-        <a href="https://twitter.com/nmartinpdx" className="">
-          <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
-        </a>
-        <a href="https://github.com/nicole-m-martin" className="">
-          <i className="fab fa-github-square fa-3x m-4 hover:bg-green-300"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nicolemartinpdx/" className="">
-          <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
-        </a>
+    <div className="bg-white dark:bg-gray-600 h-screen grid place-content-center ">
+      <div className="flex flex-row justify-center">
+        <div className="p-5">
+          {/* social links */}
+          <p className="font-Pt dark:text-white text-2xl font-semibold mt-.5 text-center">
+            Social Links:
+          </p>
+          <a href="https://twitter.com/nmartinpdx" className="">
+            <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
+          </a>
+          <a href="https://github.com/nicole-m-martin" className="">
+            <i className="fab fa-github-square fa-3x m-4 hover:bg-green-300"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nicolemartinpdx/" className="">
+            <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
+          </a>
+        </div>
       </div>
-      <h1 className="font-Pt dark:text-white text-4xl font-semibold mt-.5">
+      <h1 className="font-Poppins dark:text-white text-4xl font-semibold mt-.5 tracking-wide text-center">
         Let's Chat!{' '}
       </h1>
       <div className="flex justify-center items-center p-5">
         <section className="flex justify-center">
           <div className="w-full max-w-xs">
             <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-              <input
-                type="hidden"
-                name="contact_number"
-                value={contactNumber}
-              />
+              <input type="hidden" name="contact_number" />
 
               <label
                 className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2"
@@ -137,25 +129,26 @@ function Contact() {
               <p className="font-semibold font-Pt dark:text-white">
                 {messageCharsLeft}
               </p>
+              <div className="flex flex-row justify-center">
+                <input
+                  className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-green-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400 dark:hover:bg-green-300"
+                  type="submit"
+                  value="Send"
+                />
 
-              <input
-                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-green-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400 dark:hover:bg-green-300"
-                type="submit"
-                value="Send"
-              />
-
-              <input
-                className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-pink-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400 dark:hover:bg-pink-300"
-                type="button"
-                onClick={() =>
-                  reset({
-                    name: '',
-                    email: '',
-                    message: '',
-                  })
-                }
-                value="Clear"
-              />
+                <input
+                  className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-pink-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400 dark:hover:bg-pink-300"
+                  type="button"
+                  onClick={() =>
+                    reset({
+                      name: '',
+                      email: '',
+                      message: '',
+                    })
+                  }
+                  value="Clear"
+                />
+              </div>
               {/* Form Submit Success Message */}
             </form>
             {successfulEmail && (
