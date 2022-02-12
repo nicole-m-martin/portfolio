@@ -7,7 +7,7 @@ export const getGifs = async () => {
   );
 
   const results = gifInfo(response);
-  console.log(results);
+  // console.log(results);
 
   return results;
 };

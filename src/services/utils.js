@@ -5,6 +5,6 @@ export const gifInfo = (gifs) => {
       img: gif.images.downsized_medium.url,
     };
   });
-  console.log(data);
+  // console.log(data);
   return data;
 };
