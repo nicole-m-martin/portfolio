@@ -2,7 +2,7 @@ import React from 'react';
 import Tech from '../Components/Tech';
 import Computer from '../../src/assets/computer.png';
 import GifList from '../Components/Giphy/GifList';
-import { useGifs } from '../hooks/useGifs';
+import { useGifs } from '../Components/Giphy/hooks/useGifs';
 
 function Home() {
   const { loading, gifs } = useGifs();

@@ -1,4 +1,4 @@
-import { THEME_TYPES } from './constants/index';
+import { THEME_TYPES } from '../constants/index';
 
 export const applyDarkTheme = (theme) => {
   const { THEME_DARK, THEME_LIGHT } = THEME_TYPES;
