@@ -4,13 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Nav({ toggle, toggleTheme }) {
   return (
-    <nav className="flex justify-between items-center h-15 bg-white text-black relative shadow-sm font-Pt bg-green-200 dark:bg-blue-300 sticky top-0">
+    <nav className={styles.main_nav}>
       <Link to="/" className="pl-8">
-        <img
-          src={nm}
-          alt="nicole"
-          className="h-12 hover:bg-green-300 dark:hover:bg-blue-400"
-        />
+        <img src={nm} alt="nicole" className={styles.logo} />
       </Link>
       <button className="font-Pt" onClick={toggleTheme}>
         <i className="fas fa-moon"></i>
@@ -32,26 +28,33 @@ function Nav({ toggle, toggleTheme }) {
           />
         </svg>
       </div>
-      <div className="pr-8 md:block hidden">
-        <Link className="p-4 hover:bg-pink-300" to="/projects">
+      <div className={styles.link_div}>
+        <Link className={styles.portfolio} to="/projects">
           Portfolio
         </Link>
-        <Link className="p-4 hover:bg-yellow-300" to="/about">
+        <Link className={styles.about} to="/about">
           About
         </Link>
-        <Link
-          className="p-4 hover:bg-blue-300 dark:hover:bg-blue-400"
-          target={'_blank'}
-          to="/resume.pdf"
-        >
+        <Link className={styles.resume} target={'_blank'} to="/resume.pdf">
           Resume
         </Link>
-        <Link className="p-4 hover:bg-green-300" to="/contact">
+        <Link className={styles.connect} to="/contact">
           Connect
         </Link>
       </div>
     </nav>
   );
 }
+
+const styles = {
+  main_nav:
+    'flex justify-between items-center h-15 bg-white text-black relative shadow-sm font-Pt bg-green-200 dark:bg-blue-300 sticky top-0',
+  logo: 'h-12 hover:bg-green-300 dark:hover:bg-blue-400',
+  link_div: 'pr-8 md:block hidden',
+  portfolio: 'p-4 hover:bg-pink-300',
+  about: 'p-4 hover:bg-yellow-300',
+  resume: 'p-4 hover:bg-blue-300 dark:hover:bg-blue-400',
+  connect: 'p-4 hover:bg-green-300',
+};
 
 export default Nav;
