@@ -15,9 +15,7 @@ function Contact() {
   // Message Sent alert
   const [successfulEmail, setSuccessfulEmail] = useState(false);
 
-  const onSubmit = (data) => {
-    // console.log(data);
-
+  const onSubmit = () => {
     sendForm(
       'default_service',
       'template_28v9nkp',
@@ -39,37 +37,29 @@ function Contact() {
   const messageCharsLeft = 2500 - message.length;
 
   return (
-    <div className="bg-white dark:bg-gray-600 h-screen grid place-content-center ">
-      <div className="flex flex-row justify-center">
+    <div className={styles.main_div}>
+      <div className={styles.flex_div}>
         <div className="p-5">
-          {/* social links */}
-          <p className="font-Pt dark:text-white text-2xl font-semibold mt-.5 text-center">
-            Social Links:
-          </p>
-          <a href="https://twitter.com/nmartinpdx" className="">
+          <p className={styles.social}>Social Links:</p>
+          <a href="https://twitter.com/nmartinpdx">
             <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
           </a>
-          <a href="https://github.com/nicole-m-martin" className="">
+          <a href="https://github.com/nicole-m-martin">
             <i className="fab fa-github-square fa-3x m-4 hover:bg-green-300"></i>
           </a>
-          <a href="https://www.linkedin.com/in/nicolemartinpdx/" className="">
+          <a href="https://www.linkedin.com/in/nicolemartinpdx/">
             <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
           </a>
         </div>
       </div>
-      <h1 className="font-Poppins dark:text-white text-4xl font-semibold mt-.5 tracking-wide text-center">
-        Let's Chat!{' '}
-      </h1>
-      <div className="flex justify-center items-center p-5">
+      <h1 className={styles.chat}>Let's Chat! </h1>
+      <div className={styles.main_form_container}>
         <section className="flex justify-center">
           <div className="w-full max-w-xs">
             <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
               <input type="hidden" name="contact_number" />
 
-              <label
-                className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2"
-                htmlFor="name"
-              >
+              <label className={styles.labels} htmlFor="name">
                 Name:
               </label>
               {errors.name && errors.name.type === 'required' && (
@@ -78,17 +68,14 @@ function Contact() {
                 </span>
               )}
               <input
-                className="border-2 border-black ring ring-yellow-300 dark:ring-pink-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white"
+                className={styles.name_input}
                 type="text"
                 name="name"
                 aria-invalid={errors.name ? 'true' : 'false'}
                 {...register('name', { required: true, maxLength: 40 })}
               />
 
-              <label
-                className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4"
-                htmlFor="email"
-              >
+              <label className={styles.labels} htmlFor="email">
                 Email:
               </label>
               {errors.email && errors.email.type === 'required' && (
@@ -97,17 +84,14 @@ function Contact() {
                 </span>
               )}
               <input
-                className="border-2 border-black ring ring-green-300 dark:ring-blue-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white "
+                className={styles.email_input}
                 type="email"
                 name="email"
                 aria-invalid={errors.email ? 'true' : 'false'}
                 {...register('email', { required: true, maxLength: 40 })}
               />
 
-              <label
-                className="block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4"
-                htmlFor="message"
-              >
+              <label className={styles.labels} htmlFor="message">
                 Message:
               </label>
               {errors.message && errors.message.type === 'required' && (
@@ -116,7 +100,7 @@ function Contact() {
                 </span>
               )}
               <textarea
-                className="border-2 border-black ring ring-blue-400 dark:ring-green-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none dark:bg-white "
+                className={styles.message_input}
                 {...register('message', { required: true, maxLength: 2500 })}
                 name="message"
                 id=""
@@ -126,19 +110,12 @@ function Contact() {
               />
 
               {/* Message countdown */}
-              <p className="font-semibold font-Pt dark:text-white">
-                {messageCharsLeft}
-              </p>
+              <p className={styles.countdown}>{messageCharsLeft}</p>
               <div className="flex flex-row justify-center">
-                <input
-                  className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-green-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400 dark:hover:bg-green-300"
-                  type="submit"
-                  value="Send"
-                />
+                <input className={styles.send_btn} type="submit" value="Send" />
 
                 <input
-                  className="h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-pink-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400 dark:hover:bg-pink-300"
-                  type="button"
+                  className={styles.clear_btn}
                   onClick={() =>
                     reset({
                       name: '',
@@ -146,6 +123,7 @@ function Contact() {
                       message: '',
                     })
                   }
+                  type="button"
                   value="Clear"
                 />
               </div>
@@ -160,5 +138,26 @@ function Contact() {
     </div>
   );
 }
+
+const styles = {
+  main_div: 'bg-white dark:bg-gray-600 h-screen grid place-content-center',
+  flex_div: 'flex flex-row justify-center',
+  social: 'font-Pt dark:text-white text-2xl font-semibold mt-.5 text-center',
+  chat: 'font-Poppins dark:text-white text-4xl font-semibold mt-.5 tracking-wide text-center',
+  main_form_container: 'flex justify-center items-center p-5',
+  labels:
+    'block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4',
+  name_input:
+    'border-2 border-black ring ring-yellow-300 dark:ring-pink-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white',
+  email_input:
+    'border-2 border-black ring ring-green-300 dark:ring-blue-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white',
+  message_input:
+    'border-2 border-black ring ring-blue-400 dark:ring-green-300 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none dark:bg-white',
+  countdown: 'font-semibold font-Pt dark:text-white',
+  send_btn:
+    'h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-green-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-green-500 hover:bg-green-400 dark:hover:bg-green-300',
+  clear_btn:
+    'h-8 px-4 m-4 text-sm text-black font-Pt transition-colors duration-150 dark:bg-pink-200 rounded-lg cursor-pointer focus:shadow-outline ring ring-pink-500 hover:bg-pink-400 dark:hover:bg-pink-300',
+};
 
 export default Contact;
