@@ -29,6 +29,7 @@ function Home() {
             />
             <Tech one="Redux" two="Supertest" three="Jest" four="Git/GitHub" />
           </section>
+
           <GifList gifs={gifs} loading={loading} />
         </div>
       </div>
