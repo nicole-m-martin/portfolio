@@ -1,46 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Spinner from '../UI/Spinner';
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Spinner from '../UI/Spinner';
 
-const Giphy = () => {
-  const [gifs, setGifs] = useState([]);
-  const [loading, setLoading] = useState(false);
+// const Giphy = () => {
+//   const [gifs, setGifs] = useState([]);
+//   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      // setLoading(true);
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       // setLoading(true);
 
-      const results = await axios(
-        `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=25`
-      );
-      console.log(results);
-      setGifs(results.data.data);
+//       const results = await axios(
+//         `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=25`
+//       );
+//       console.log(results);
+//       setGifs(results.data.data);
 
-      // setLoading(false);
-    };
+//       // setLoading(false);
+//     };
 
-    fetchData();
-  }, []);
+//     fetchData();
+//   }, []);
 
-  const renderGifs = () => {
-    // if (setLoading) {
-    //   return <Spinner />;
-    // }
+//   const renderGifs = () => {
+//     // if (setLoading) {
+//     //   return <Spinner />;
+//     // }
 
-    return gifs.map((gif) => {
-      return (
-        <div key={gif.id} className="gifs">
-          <img src={gif.images.downsized_medium.url} alt="gif" />
-        </div>
-      );
-    });
-  };
+//     return gifs.map((gif) => {
+//       return (
+//         <div key={gif.id} className="gifs">
+//           <img src={gif.images.downsized_medium.url} alt="gif" />
+//         </div>
+//       );
+//     });
+//   };
 
-  return (
-    <div>
-      <div>{renderGifs()}</div>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <div>{renderGifs()}</div>
+//     </div>
+//   );
+// };
 
-export default Giphy;
+// export default Giphy;

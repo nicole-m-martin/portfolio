@@ -1,9 +1,12 @@
 import React from 'react';
 import Tech from '../Components/Tech';
 import Computer from '../../src/assets/computer.png';
-import Giphy from '../Components/Giphy/Giphy';
+import GifList from '../Components/Giphy/GifList';
+import { useGifs } from '../hooks/useGifs';
 
 function Home() {
+  const { loading, gifs } = useGifs();
+
   return (
     <>
       <div className={styles.mainSection}>
@@ -26,7 +29,7 @@ function Home() {
             />
             <Tech one="Redux" two="Supertest" three="Jest" four="Git/GitHub" />
           </section>
-          <Giphy />
+          <GifList gifs={gifs} loading={loading} />
         </div>
       </div>
     </>
