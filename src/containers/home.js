@@ -1,12 +1,21 @@
 import React from 'react';
 import Tech from '../Components/Tech';
 import Computer from '../../src/assets/computer.png';
-import GifList from '../Components/Giphy/GifList';
-import { useGifs } from '../Components/Giphy/hooks/useGifs';
+// import Spinner from '../Components/UI/Spinner';
+// import GifList from '../Components/Giphy/GifList';
+// import { useGifs } from '../Components/Giphy/hooks/useGifs';
+// import { getGifs } from '../Components/Giphy/services/GiphyApi';
 
-function Home() {
-  const { loading, gifs } = useGifs();
+const Home = () => {
+  // const [gif, setGif] = useState([]);
 
+  // const clickHandler = async () => {
+  //   const newGif = await getGifs();
+  //   setGif(newGif);
+  // };
+  // const { loading, gifs, currentGif, gifPerPage  } = useGifs();
+
+  // if (loading) return <Spinner />;
   return (
     <>
       <div className={styles.mainSection}>
@@ -30,12 +39,12 @@ function Home() {
             <Tech one="Redux" two="Supertest" three="Jest" four="Git/GitHub" />
           </section>
 
-          <GifList gifs={gifs} loading={loading} />
+          {/* <GifList gifs={gifs} loading={loading} /> */}
         </div>
       </div>
     </>
   );
-}
+};
 
 const styles = {
   mainSection: 'bg-white dark:bg-gray-600 h-screen',
