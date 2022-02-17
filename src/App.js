@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Nav from './Components/UI/Nav';
 import Dropdown from './Components/UI/Dropdown';
-import Home from './containers/Home';
+import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
 import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
