@@ -110,3 +110,4 @@ Documenting building my developer portfolio using:
 - Registered domain name.
 - Started planning color/design work.
 
+

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Nav from './Components/UI/Nav';
 import Dropdown from './Components/UI/Dropdown';
 import Home from './containers/home';
@@ -39,19 +38,17 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <Nav toggle={toggle} toggleTheme={toggleTheme} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/projects" component={ProjectContainer} />
-          <Route exact path="/about" component={AboutContainer} />
-          <Route exact path="/contact" component={ContactContainer} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/projects" element={<ProjectContainer />} />
+          <Route exact path="/about" element={<AboutContainer />} />
+          <Route exact path="/contact" element={<ContactContainer />} />
+        </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
