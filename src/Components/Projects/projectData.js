@@ -5,7 +5,7 @@ export const projectArray = [
     name: 'Quick on the Draw',
     stack: 'React, Javascript, React Canvas Draw, TailwindCSS, Craco,  Netlify',
     description:
-      'Quick on the Draw is an app to encourage people to take breaks by giving them a fun, timed activity to take their mind off of work. This app was build over 5 days as part of a mintbean.io hackathon. We earned two awards, the mintbean star and certificate of completion.',
+      'Quick on the Draw is a drawing app to encourage people to take breaks by giving them a fun, timed activity to take their mind off of work. This app was built over 5 days as part of a mintbean.io hackathon. We earned two awards, the mintbean star and certificate of completion.',
     github: 'https://github.com/Quick-on-the-Draw/quick-on-the-draw-app',
     deployed: 'https://quick-on-the-draw.netlify.app/',
   },
