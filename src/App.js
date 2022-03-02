@@ -6,7 +6,7 @@ import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
 import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
-import BlogContainer from './containers/blogContainer';
+// import BlogContainer from './containers/blogContainer';
 import Footer from './Components/UI/Footer';
 import { useTheme } from './darkMode/hooks/useTheme';
 import useThemeStore from './darkMode/stores/useThemeStore';
