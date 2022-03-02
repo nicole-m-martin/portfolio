@@ -10,7 +10,7 @@ const About = () => {
         {/* <img className="hidden" src={social} alt="social" /> */}
         <img className={styles.image_nicole} alt="nicole blonde" src={nic} />
         <div className={styles.text_center}>
-          <h1 className={styles.job_title}>Software Engineer</h1>
+          <h1 className={styles.job_title}>Software Developer</h1>
           <p className={styles.bio}>
             My name is{' '}
             <span className={styles.nicole_title}>Nicole Martin</span>, and I

@@ -41,6 +41,9 @@ function Nav({ toggle, toggleTheme }) {
         <Link className={styles.connect} to="/contact">
           Connect
         </Link>
+        {/* <Link className={styles.blog} to="/blogs">
+          Blog
+        </Link> */}
       </div>
     </nav>
   );
@@ -55,6 +58,7 @@ const styles = {
   about: 'p-4 hover:bg-yellow-300',
   resume: 'p-4 hover:bg-blue-300 dark:hover:bg-blue-400',
   connect: 'p-4 hover:bg-green-300',
+  blog: 'p-4 hover:bg-green-300',
 };
 
 export default Nav;

@@ -23,9 +23,12 @@ const Home = () => {
           <h1 className={styles.title}>Hello World🌎</h1>
 
           <p className={styles.subtitle}>
-            I'm <span className={styles.nicoleColor}>Nicole</span> and I love
-            coffee and coding.
+            I'm <span className={styles.nicoleColor}>Nicole</span>. It's so nice
+            to meet you!
           </p>
+
+          {/* <p className={styles.subtitle}>Check Out My Blog:</p>
+          <a href="https://nicsquicktips.hashnode.dev/">Hashnode</a> */}
           <img src={Computer} alt="comp" />
           <h3 className={styles.techNames}>💙 Tech I love 💙</h3>
           <section className={styles.techBox}>

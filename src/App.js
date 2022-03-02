@@ -6,6 +6,7 @@ import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
 import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
+import BlogContainer from './containers/blogContainer';
 import Footer from './Components/UI/Footer';
 import { useTheme } from './darkMode/hooks/useTheme';
 import useThemeStore from './darkMode/stores/useThemeStore';
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/projects" element={<ProjectContainer />} />
           <Route exact path="/about" element={<AboutContainer />} />
           <Route exact path="/contact" element={<ContactContainer />} />
+          {/* <Route exact path="/blog" element={<BlogContainer />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

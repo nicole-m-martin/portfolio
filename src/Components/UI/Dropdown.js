@@ -23,6 +23,9 @@ const Dropdown = ({ isOpen, toggle }) => {
       <Link className={styles.contactTab} to="/contact">
         Contact
       </Link>
+      {/* <Link className={styles.blogTab} to="/blog">
+        Blog
+      </Link> */}
     </div>
   );
 };
@@ -35,6 +38,8 @@ const styles = {
   resumeTab:
     'p-4 hover:bg-blue-300 dark:hover:bg-blue-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
   contactTab:
+    'p-4 hover:bg-green-300 dark:hover:bg-green-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
+  blogTab:
     'p-4 hover:bg-green-300 dark:hover:bg-green-300 dark:hover:text-black bg-white dark:bg-gray-500 dark:text-white font-Pt',
 };
 
