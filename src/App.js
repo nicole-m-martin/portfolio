@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/UI/Header';
-import Dropdown from './components/UI/Dropdown';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Nav from './Components/UI/Nav';
+import Dropdown from './Components/UI/Dropdown';
 import Home from './containers/home';
 import ProjectContainer from './containers/projectContainer';
 import AboutContainer from './containers/aboutContainer';
 import ContactContainer from './containers/contactContainer';
-import ResumeContainer from './containers/resumeContainer';
-import Footer from './components/UI/Footer';
+// import BlogContainer from './containers/blogContainer';
+import Footer from './Components/UI/Footer';
+import { useTheme } from './darkMode/hooks/useTheme';
+import useThemeStore from './darkMode/stores/useThemeStore';
 
 function App() {
   // NavBar Dropdown Hamburger Menu Logic
@@ -32,22 +33,27 @@ function App() {
     };
   });
 
+  // Dark Mode!
+  
+  const toggleTheme = useThemeStore((state) => state.toggleTheme);
+  useTheme();
+  const theme = useThemeStore((state) => state.theme);
+
+
   return (
     <div className="App">
-      <Router>
-        <Header toggle={toggle} />
+      <BrowserRouter>
+        <Nav toggle={toggle} toggleTheme={toggleTheme} theme={theme}/>
         <Dropdown isOpen={isOpen} toggle={toggle} />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/projects" component={ProjectContainer} />
-          <Route exact path="/about" component={AboutContainer} />
-          <Route exact path="/contact" component={ContactContainer} />
-          <Route exact path="/resume" component={ResumeContainer} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/projects" element={<ProjectContainer />} />
+          <Route exact path="/about" element={<AboutContainer />} />
+          <Route exact path="/contact" element={<ContactContainer />} />
+          {/* <Route exact path="/blog" element={<BlogContainer />} /> */}
+        </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

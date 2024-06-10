@@ -3,5 +3,13 @@
   "prettier.jsxSingleQuote": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "cSpell.words": [
+    "Ghipy",
+    "Gifs",
+    "Giphy",
+    "quickonthedraw",
+    "Toadally",
+    "Zustand"
+  ]
 }
