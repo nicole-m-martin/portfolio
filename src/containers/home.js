@@ -65,4 +65,4 @@ const styles = {
     'place-items-center grid lg:grid-cols-2 lg:grid-rows-1 gap-4  sm:grid-cols-2  sm:grid-rows-1 gap-2 md:grid-cols-2  md:grid-rows-2 gap-2  border-2 my-2 rounded border-black ring-2 ring-green-400 bg-gradient-to-r from-blue-300 to-green-300 font-Pt dark:font-Pt p-2 text-gray-600 dark:text-gray-600 dark:ring-blue-400',
 };
 
-export default Home;
+export default Home; 
