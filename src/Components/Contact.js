@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { init, sendForm } from 'emailjs-com';
-init('user_FkoSWYEQ8F2cqar2OKJ2V');
+import x from '../assets/square-x-twitter.svg'
+// import { init, sendForm } from 'emailjs-com';
+// init('user_FkoSWYEQ8F2cqar2OKJ2V');
 
 function Contact() {
   const {
@@ -40,9 +41,10 @@ function Contact() {
     <div className={styles.main_div}>
       <div className={styles.flex_div}>
         <div className="p-5">
+        <h1 className={styles.chat}>Let's Chat! 💬 </h1>
           <p className={styles.social}>Social Links:</p>
-          <a href="https://twitter.com/nmartinpdx">
-          <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
+          <div className={styles.iconBox}> <a href="https://twitter.com/nmartinpdx">
+          <img src={x} alt='twitter-x' className='fa-3x m-4 hover:bg-yellow-300' />
           </a>
           <a href="https://github.com/nicole-m-martin">
             <i className="fab fa-github-square fa-3x m-4 hover:bg-green-300"></i>
@@ -50,9 +52,10 @@ function Contact() {
           <a href="https://www.linkedin.com/in/nicolemartinpdx/">
             <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
           </a>
+          </div>
         </div>
       </div>
-      <h1 className={styles.chat}>Let's Chat! </h1>
+    
       <div className={styles.main_form_container}>
         {/* <section className="flex justify-center">
           <div className="w-full max-w-xs">
@@ -144,10 +147,11 @@ const styles = {
   main_div: 'bg-white dark:bg-gray-600 h-screen grid place-content-center',
   flex_div: 'flex flex-row justify-center',
   social: 'font-Pt dark:text-white text-2xl font-semibold mt-.5 text-center',
-  chat: 'font-Poppins dark:text-white text-4xl font-semibold mt-.5 tracking-wide text-center',
+  iconBox: 'flex flex-row justify-center m-4',
+  chat: 'font-Poppins dark:text-white text-5xl font-semibold mt-.5 tracking-wide text-center m-10',
   main_form_container: 'flex justify-center items-center p-5',
   labels:
-    'block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4',
+    'block text-grey-darker text-lg text-left  hover:bg-pink-300 dark:hover:bg-pink-400  font-bold font-Pt dark:text-white margin-2 p-2',
   name_input:
     'border-2 border-black ring ring-yellow-300 dark:ring-pink-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white',
   email_input:
