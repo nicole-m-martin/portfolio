@@ -20,7 +20,7 @@ const Home = () => {
     <>
       <div className={styles.mainSection}>
         <div className={styles.innerSection}>
-          <h1 className={styles.title}>Hello World🌎</h1>
+          <h1 className={styles.title}>Hello World 🌎</h1>
 
           <p className={styles.subtitle}>
             I'm <span className={styles.nicoleColor}>Nicole</span>. It's so nice
@@ -32,14 +32,15 @@ const Home = () => {
           <img src={Computer} alt="comp" />
           <h3 className={styles.techNames}>💙 Tech I love 💙</h3>
           <section className={styles.techBox}>
-            <Tech one="HTML5" two="CSS3" three="Javascript" four="React" />
+            <Tech one="HTML5" two="CSS3" three="Javascript" four="React" five="Vue.js" />
             <Tech
-              one="Node.js"
-              two="Express.js"
-              three="Material-UI"
-              four="TailwindCSS"
+              one="Next.js"
+              two="Node.js"
+              three="Express.js"
+              four="Material-UI"
+              five="TailwindCSS"
             />
-            <Tech one="Redux" two="Supertest" three="Jest" four="Git/GitHub" />
+            <Tech one="Sass" two="Supertest" three="Jest" four="Git/GitHub" five="SQL" />
           </section>
 
           {/* <GifList gifs={gifs} loading={loading} /> */}
@@ -59,7 +60,7 @@ const styles = {
   nicoleColor: 'text-green-400 dark:text-blue-400 text-lg',
   techNames: 'text-lg font-Poppins text-gray-600 dark:text-gray-300 mt-4',
   techBox:
-    'grid grid-flow-row grid-cols-3 grid-rows-1 gap-10 sm:gap-2 border-2 my-2 rounded border-black ring-2 ring-green-400 bg-gradient-to-r from-blue-300 to-green-300 font-Pt dark:font-Pt p-2 text-gray-600 dark:text-white dark:ring-blue-400',
+    'grid grid-flow-row grid-cols-3 grid-rows-1 gap-10  sm:gap-4 border-2 my-2 rounded border-black ring-2 ring-green-400 bg-gradient-to-r from-blue-300 to-green-300 font-Pt dark:font-Pt p-2 text-gray-600 dark:text-gray-600 dark:ring-blue-400',
 };
 
 export default Home;
