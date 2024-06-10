@@ -1,50 +1,48 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import x from '../assets/square-x-twitter.svg'
-// import { init, sendForm } from 'emailjs-com';
-// init('user_FkoSWYEQ8F2cqar2OKJ2V');
+import { init, sendForm } from 'emailjs-com';
+init('user_FkoSWYEQ8F2cqar2OKJ2V');
 
 function Contact() {
   const {
-    // register,
-    // handleSubmit,
-    // watch,
-    // reset,
+    register,
+    handleSubmit,
+    watch,
+    reset,
     formState: { errors },
   } = useForm();
 
   // Message Sent alert
-  // const [successfulEmail, setSuccessfulEmail] = useState(false);
+  const [successfulEmail, setSuccessfulEmail] = useState(false);
 
-  // const onSubmit = () => {
-  //   sendForm(
-  //     'default_service',
-  //     'template_28v9nkp',
-  //     '#contact-form',
-  //     'user_FkoSWYEQ8F2cqar2OKJ2V'
-  //   ).then(
-  //     function (res) {
-  //       console.log('SUCCESS!', res.status, res.text);
-  //     },
-  //     function (error) {
-  //       console.log('FAILED...', error);
-  //     }
-  //   );
-  //   setSuccessfulEmail(true);
-  // };
+  const onSubmit = () => {
+    sendForm(
+      'default_service',
+      'template_28v9nkp',
+      '#contact-form',
+      'user_FkoSWYEQ8F2cqar2OKJ2V'
+    ).then(
+      function (res) {
+        console.log('SUCCESS!', res.status, res.text);
+      },
+      function (error) {
+        console.log('FAILED...', error);
+      }
+    );
+    setSuccessfulEmail(true);
+  };
 
   // Message countdown
-  // const message = watch('message') || '';
-  // const messageCharsLeft = 2500 - message.length;
+  const message = watch('message') || '';
+  const messageCharsLeft = 2500 - message.length;
 
   return (
     <div className={styles.main_div}>
       <div className={styles.flex_div}>
         <div className="p-5">
-        <h1 className={styles.chat}>Let's Chat! 💬 </h1>
           <p className={styles.social}>Social Links:</p>
-          <div className={styles.iconBox}> <a href="https://twitter.com/nmartinpdx">
-          <img src={x} alt='twitter-x' className='fa-3x m-4 hover:bg-yellow-300' />
+          <a href="https://twitter.com/nmartinpdx">
+            <i className="fab fa-twitter-square fa-3x m-4 hover:bg-yellow-300"></i>
           </a>
           <a href="https://github.com/nicole-m-martin">
             <i className="fab fa-github-square fa-3x m-4 hover:bg-green-300"></i>
@@ -52,12 +50,11 @@ function Contact() {
           <a href="https://www.linkedin.com/in/nicolemartinpdx/">
             <i className="fab fa-linkedin fa-3x m-4 hover:bg-blue-400"></i>
           </a>
-          </div>
         </div>
       </div>
-    
+      <h1 className={styles.chat}>Let's Chat! </h1>
       <div className={styles.main_form_container}>
-        {/* <section className="flex justify-center">
+        <section className="flex justify-center">
           <div className="w-full max-w-xs">
             <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
               <input type="hidden" name="contact_number" />
@@ -112,7 +109,7 @@ function Contact() {
                 aria-invalid={errors.message ? 'true' : 'false'}
               />
 
-            
+              {/* Message countdown */}
               <p className={styles.countdown}>{messageCharsLeft}</p>
               <div className="flex flex-row justify-center">
                 <input className={styles.send_btn} type="submit" value="Send" />
@@ -130,14 +127,13 @@ function Contact() {
                   value="Clear"
                 />
               </div>
-              
+              {/* Form Submit Success Message */}
             </form>
             {successfulEmail && (
               <span className="italic text-green-500">Email Sent</span>
             )}
           </div>
-        </section> */}
-        <a className={styles.labels} href="mailto:n.martinpdx@gmail.com">Email: n.martinpdx@gmail.com</a>
+        </section>
       </div>
     </div>
   );
@@ -147,11 +143,10 @@ const styles = {
   main_div: 'bg-white dark:bg-gray-600 h-screen grid place-content-center',
   flex_div: 'flex flex-row justify-center',
   social: 'font-Pt dark:text-white text-2xl font-semibold mt-.5 text-center',
-  iconBox: 'flex flex-row justify-center m-4',
-  chat: 'font-Poppins dark:text-white text-5xl font-semibold mt-.5 tracking-wide text-center m-10',
+  chat: 'font-Poppins dark:text-white text-4xl font-semibold mt-.5 tracking-wide text-center',
   main_form_container: 'flex justify-center items-center p-5',
   labels:
-    'block text-grey-darker text-lg text-left  hover:bg-pink-300 dark:hover:bg-pink-400  font-bold font-Pt dark:text-white margin-2 p-2',
+    'block text-grey-darker text-lg text-left  font-bold font-Pt dark:text-white mb-2 pt-4',
   name_input:
     'border-2 border-black ring ring-yellow-300 dark:ring-pink-400 rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline dark:bg-white',
   email_input:

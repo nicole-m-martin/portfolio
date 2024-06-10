@@ -2,21 +2,16 @@ import React from 'react';
 import nm from '../../assets/nm-logo.png';
 import { Link } from 'react-router-dom';
 
-function Nav({ toggle, toggleTheme, theme }) {
-  console.log(theme);
+function Nav({ toggle, toggleTheme }) {
   return (
     <nav className={styles.main_nav}>
       <Link to="/" className="pl-8">
         <img src={nm} alt="nicole" className={styles.logo} />
       </Link>
       <button className="font-Pt" onClick={toggleTheme}>
-      {theme === 'light' ? 
-      <i className="fas fa-sun"></i> : 
-      <i className="fas fa-moon"></i>
-    }
-        <p className="font-Pt">{theme === 'light' ? 'Light Mode!' : 'Dark Mode!'}</p>
+        <i className="fas fa-moon"></i>
+        <p className="font-Pt">Dark Mode!</p>
       </button>
-      {/* Hamburger */}
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

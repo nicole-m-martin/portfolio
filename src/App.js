@@ -34,16 +34,13 @@ function App() {
   });
 
   // Dark Mode!
-  
   const toggleTheme = useThemeStore((state) => state.toggleTheme);
   useTheme();
-  const theme = useThemeStore((state) => state.theme);
-
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav toggle={toggle} toggleTheme={toggleTheme} theme={theme}/>
+        <Nav toggle={toggle} toggleTheme={toggleTheme} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Routes>
           <Route exact path="/" element={<Home />} />
